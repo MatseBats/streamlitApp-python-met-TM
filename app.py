@@ -7,7 +7,7 @@ np.set_printoptions(suppress=True)
 
 @st.cache_resource
 def load_tm_model():
-    return load_model("saved.model.pb", compile=False)
+    return load_model("keras_model.h5", compile=False)
 
 model = load_tm_model()
 class_names = open("labels.txt", "r").readlines()
